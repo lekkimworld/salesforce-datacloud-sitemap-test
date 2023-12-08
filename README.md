@@ -7,7 +7,7 @@ uploading it in the Sitemap section of the Data Cloud WebSDK configuration or by
 variable `LOCAL_SITEMAP` to true. 
 
 The app is very simple and loads pages based on path supplied in the URL. The path supplies (e.g. `index.html`) is 
-translated into a corresponding (Handlebars)[https://handlebarsjs.com/] template from the `views` folder by stripping 
+translated into a corresponding [Handlebars](https://handlebarsjs.com/) template from the `views` folder by stripping 
 what's after the first period (`.`). 
 
 Examples: 
