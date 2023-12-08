@@ -24,9 +24,15 @@ const initSitemap = async () => {
                 }),
             ],
         },
+
+        // default page type if a specific page type doesn't match. The interaction 
+        // key is not listed in the documentation but works just fine
         pageTypeDefault: {
             name: "defaultPage",
             locale: "da_DK",
+            interaction: {
+                name: "Default Page",
+            },
             listeners: [
                 SalesforceInteractions.listener("click", "h1", (ev) => {
                     console.log("defaultPage - h1-tag click listener", ev);
