@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script src="{{websdkUrl}}"></script>
+    </head>
+    <body>
+        <h1 id="pageTitle">{{title}} (h1 #pageTitle)</h1>
+        {{{body}}}
+
+        {{#if isLocalSiteMap }}
+        <script src="/public/sitemap.js"></script>
+        {{/if}}
+    </body>
+</html>
